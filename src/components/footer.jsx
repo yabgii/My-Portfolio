@@ -61,7 +61,10 @@ function Footer() {
           </div>
         </div>
         <div className="footer-end">
-          <p>© {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Yeabesira Alemayehu. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </footer>
