@@ -1,0 +1,107 @@
+.NavContainer {
+  background-color: #111;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  /* position: fixed; REMOVED THIS */
+}
+
+.NavLinks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.NavLinks ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.NavLinks ul li a {
+  display: flex;
+  color: antiquewhite;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NavLinks ul li a:hover {
+  color: #f1c40f;
+}
+
+.NavLogo {
+  color: #f1c40f;
+  font-size: large;
+  margin-left: 2rem;
+}
+
+/* Styles for hamburger menu icon */
+.menu-toggle {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #f1c40f;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .NavLinks {
+    display: none; /* Hide the links */
+    flex-direction: column; /* for mobile*/
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    align-items: center;
+    padding: 0;
+  }
+
+  .NavLinks.active {
+    display: flex; /* Show the links when active */
+    padding: 2rem; /*Add paddding*/
+    flex-direction: column;
+  }
+
+  .NavLinks ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .NavLinks ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+  }
+  .NavLinks ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger icon */
+  }
+  .NavLinks ul li a {
+    padding: 10px;
+    width: 100%;
+  }
+}

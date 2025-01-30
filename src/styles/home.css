@@ -1,0 +1,78 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  margin-top: 5rem;
+  align-items: center;
+  padding-top: 8rem;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.heroText {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.heroSubtext {
+  font-size: 1.2rem;
+  margin-top: 0.5rem; /* Adds spacing below the typewriter text */
+  opacity: 0.8;
+}
+
+.cta-btns {
+  margin-top: 20px;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.contact-me,
+.resume-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  height: 3rem;
+}
+
+.contact-me {
+  background-color: #007bff;
+  color: white;
+}
+
+.resume-btn {
+  background-color: #333;
+  color: white;
+}
+
+.contact-me:hover,
+.resume-btn:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 480px) {
+  .heroContainer {
+    margin-top: 11rem;
+  }
+  .heroText h1 {
+    font-size: 1.5rem;
+  }
+  .heroSubtext {
+    font-size: 1rem;
+  }
+
+  .cta-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .contact-me,
+  .resume-btn {
+    /*  width: 80%; 
+    padding: 10px; */
+    font-size: 0.9rem;
+  }
+}

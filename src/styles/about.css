@@ -1,0 +1,130 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 400px;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.aboutContent {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.aboutText {
+  flex: 1;
+  text-align: left;
+}
+
+.aboutText h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #9c7815;
+}
+
+.aboutText p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #c8bbbb;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Skills Section */
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.skills-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.skills-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #9c7815;
+  text-align: center;
+}
+.skills-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  flex-basis: calc(33.33% - 1rem);
+  min-width: 250px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  margin-bottom: 5px;
+  color: #c8bbbb;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.skill-icon {
+  font-size: 1.2em;
+  color: #c8bbbb;
+}
+@media (max-width: 768px) {
+  .skills-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-card {
+    flex-basis: auto;
+    width: 90%;
+  }
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+  .aboutText {
+    text-align: center;
+  }
+}
