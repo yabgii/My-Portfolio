@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h3>Contact Us</h3>
+          <h3>Contact Me</h3>
           <div className="address">
             <p>Megenagna Bole</p>
             <p>Ethiopia Addis Ababa</p>
@@ -24,7 +24,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-right">
-          <h3>Follow Us</h3>
+          <h3>Follow Me</h3>
           <div className="social-links">
             <a
               href="https://www.instagram.com/yeabesira_/"
